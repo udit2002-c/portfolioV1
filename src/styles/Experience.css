@@ -1,0 +1,34 @@
+.experience {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .experience h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .experience .paper-card {
+    animation: slideInRight 1s ease-out;
+  }
+  
+  .experience h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .experience ul {
+    padding-left: 1.5rem;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  

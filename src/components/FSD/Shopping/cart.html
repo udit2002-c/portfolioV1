@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="sharejd.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .cart-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .cart-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-item {
+            display: flex;
+            flex-direction: column;  /* This line makes the items stack vertically */
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+
+        .cart-item img {
+            max-width: 100%;  /* Set max-width to 100% for responsive image display */
+            border-radius: 5px;
+        }
+
+        .cart-item-details {
+            margin: 10px 0;  /* Adjust margin for vertical layout */
+            text-align: center;  /* Center content within the item */
+        }
+
+        .cart-item-details h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+
+        .cart-item-details p {
+            margin: 5px 0;
+            color: #fff;
+        }
+
+        .total-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #444;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .place-order-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .place-order-btn:hover {
+            background-color: #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        nav a {
+    color: #ffeb3b;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: larger;
+    align-items: center;
+}
+
+        
+    </style>
+</head>
+<body>
+    
+            <br>
+        <h1>Your Shopping Cart</h1>
+        <br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="catalogue.html">Catalogue</a>
+        </nav>
+       
+    <main class="cart-container">
+        <h2>Items in Your Cart</h2>
+        <ul class="cart-items">
+            <li class="cart-item">
+                <img src="https://source.unsplash.com/100x100/?product,smartphone" alt="Product 1">
+                <div class="cart-item-details">
+                    <h3>Smartphone</h3>
+                    <p>Price: Rs.10000</p>
+                </div>
+            </li>
+
+            <li class="cart-item">
+                <img src="https://source.unsplash.com/100x100/?product,headphones" alt="Product 2">
+                <div class="cart-item-details">
+                    <h3>Headphones</h3>
+                    <p>Price: Rs.1500</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="total-container">
+            Total:
+            Rs.11,500
+        </div>
+
+        <button class="place-order-btn"><b>Place Order</b></button>
+    </main>
+
+   
+</body>
+</html>

@@ -1,0 +1,55 @@
+.projects {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-grid .paper-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInScale 1s ease-out;
+  }
+  
+  .project-grid h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-grid p {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .project-grid ul {
+    padding-left: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

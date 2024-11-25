@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    padding: 100px;
+    text-align: left;
+}
+
+header {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #ffeb3b;
+}
+
+nav a {
+    color: #ffeb3b;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0 0 5px #ffeb3b;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
+}
+
+.form-container {
+    flex: 2;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
+}
+
+h1, h2 {
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #ffeb3b;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffeb3b;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ffeb3b;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 5px;
+    color: #111;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.7);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #ffeb3b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

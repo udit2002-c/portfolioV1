@@ -1,0 +1,55 @@
+.scrapbook-page {
+    background-color: var(--paper-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .page-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tape {
+    position: absolute;
+    background-color: var(--tape-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tape-top-left {
+    top: -10px;
+    left: 20px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(-5deg);
+  }
+  
+  .tape-top-right {
+    top: -10px;
+    right: 20px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(5deg);
+  }
+  
+  .tape-bottom-left {
+    bottom: -10px;
+    left: 30px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(5deg);
+  }
+  
+  .tape-bottom-right {
+    bottom: -10px;
+    right: 30px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(-5deg);
+  }
+  
+  

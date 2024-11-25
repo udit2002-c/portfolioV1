@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz</title>
+  <!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style> -->
+</head>
+<body>
+  <h2>Quiz</h2>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="a"> Hyperlinks and Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="b"> Hyper Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label>
+    </div>
+
+    <div class="question">
+      <p>2. What is the correct syntax to include a JavaScript file?</p>
+      <label><input type="radio" name="q2" value="a"> &lt;script src="file.js"&gt;</label><br>
+      <label><input type="radio" name="q2" value="b"> &lt;script href="file.js"&gt;</label><br>
+      <label><input type="radio" name="q2" value="c"> &lt;js src="file.js"&gt;</label>
+    </div>
+
+    <div class="question">
+      <p>3. Which is a JavaScript framework?</p>
+      <label><input type="radio" name="q3" value="a"> Django</label><br>
+      <label><input type="radio" name="q3" value="b"> Flask</label><br>
+      <label><input type="radio" name="q3" value="c"> React</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <div id="result" class="result"></div>
+
+  <script>
+    function checkAnswers() {
+      
+      const correctAnswers = {
+        q1: 'b',
+        q2: 'a',
+        q3: 'c'
+      };
+
+      let score = 0;
+
+      
+      const userAnswers = {
+        q1: document.querySelector('input[name="q1"]:checked'),
+        q2: document.querySelector('input[name="q2"]:checked'),
+        q3: document.querySelector('input[name="q3"]:checked')
+      };
+
+      
+      if (userAnswers.q1 && userAnswers.q1.value === correctAnswers.q1) score++;
+      if (userAnswers.q2 && userAnswers.q2.value === correctAnswers.q2) score++;
+      if (userAnswers.q3 && userAnswers.q3.value === correctAnswers.q3) score++;
+
+      
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = `Your score: ${score}/3`;
+    }
+  </script>
+
+</body>
+</html>

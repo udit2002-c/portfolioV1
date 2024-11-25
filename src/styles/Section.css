@@ -1,0 +1,95 @@
+.scrapbook-section {
+    background-color: var(--paper-color);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tape {
+    position: absolute;
+    background-color: var(--tape-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 30px;
+  }
+  
+  .tape-top-left {
+    top: -10px;
+    left: 20px;
+    transform: rotate(-5deg);
+  }
+  
+  .tape-top-right {
+    top: -10px;
+    right: 20px;
+    transform: rotate(5deg);
+  }
+  
+  .tape-bottom-left {
+    bottom: -10px;
+    left: 30px;
+    transform: rotate(5deg);
+  }
+  
+  .tape-bottom-right {
+    bottom: -10px;
+    right: 30px;
+    transform: rotate(-5deg);
+  }
+  
+  .scrapbook-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+  }
+  
+  .experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .scrapbook-section {
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+  
+    .scrapbook-section h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  
