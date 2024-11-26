@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const TypewriterHeading = ({ children, className = '' }) => {
+const TypewriterHeading = ({ children, ...props }) => {
   const headingRef = useRef(null);
 
   useEffect(() => {
@@ -34,8 +34,7 @@ const TypewriterHeading = ({ children, className = '' }) => {
     return () => observer.disconnect();
   }, [children]);
 
-  return <h2 ref={headingRef} className={`typewriter-heading ${className}`}>{children}</h2>;
+  return <h2 ref={headingRef} {...props} className={`typewriter-heading ${props.className || ''}`}>{children}</h2>;
 };
 
 export default TypewriterHeading;
-
