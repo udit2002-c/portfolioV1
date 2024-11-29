@@ -122,22 +122,26 @@ const App = () => {
       <canvas ref={canvasRef} className="background-canvas" />
       <div className="grain-overlay"></div>
       <Header />
-      <main className="content">
+      <main className="content" style={{ color: '#000', backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
         <Section id="home" className="home-section scrapbook-section">
           <div className="profile-image-container">
             <img 
-              src="/placeholder.svg?height=200&width=200" 
+              src="/profilepicture.jpg"
               alt="Profile" 
               className="profile-image"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "././public/profilepicture.jpg";
+              }}
             />
           </div>
           <TypewriterHeading className="text-4xl md:text-5xl">Udit Narain Tewari</TypewriterHeading>
-          <RecursiveTyping 
+          {/* <RecursiveTyping 
             phrases={["Computer Science Student", "Aspiring Web Developer", "Technology Enthusiast"]} 
             typingSpeed={150}
             deletingSpeed={100}
-            pauseDuration={2000}
-          />
+            pauseDuration={3000}
+          /> */}
           <h2 className="subtitle text-2xl md:text-3xl">Computer Science Engineering Student</h2>
           <p className="intro">
             Dedicated to the pursuit of knowledge in web development and entrepreneurship. 
